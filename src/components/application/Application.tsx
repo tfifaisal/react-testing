@@ -1,20 +1,16 @@
 export const Application = () => {
 	return (
 		<>
+			<h1>Job applicaiton form</h1>
+			<h2>Section 1</h2>
 			<form>
 				<div>
 					<label htmlFor="name">Name</label>
-					<input
-						type="text"
-						id="name"
-						placeholder="Fullname"
-						value="Vishwas"
-						onChange={() => {}}
-					/>
+					<input type="text" id="name" placeholder="FullName" />
 				</div>
 				<div>
 					<label htmlFor="bio">Bio</label>
-					<textarea id="bio" />
+					<textarea id="bio" name="bio" />
 				</div>
 				<div>
 					<label htmlFor="job-location">Job location</label>
@@ -33,7 +29,7 @@ export const Application = () => {
 						terms and conditions
 					</label>
 				</div>
-				<button disabled>Submit</button>
+				<button>Submit</button>
 			</form>
 		</>
 	)
